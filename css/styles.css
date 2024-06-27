@@ -1,0 +1,71 @@
+* {
+  font-family: Roboto, "Open Sans", sans-serif;
+  font-size: 20px;
+}
+.navbar {
+  background-color: #1e202b;
+}
+.navbar .navIcon img {
+  width: 64px;
+  height: 38px;
+}
+.navLinks ul {
+  list-style-type: none;
+}
+.navLinks ul li {
+  padding: 10px;
+}
+.navLinks ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  transition: 0.3s ease;
+  font-weight: 400;
+}
+
+.navLinks ul li a:hover {
+  color: #1779d8;
+  border: 2px solid #1779d8;
+  border-radius: 30%;
+}
+.navLinks ul li a:active {
+  color: #1779d8;
+  border: 2px solid #1779d8;
+  border-radius: 30%;
+}
+main {
+  background-image: url(../images/banner.png);
+  background-size: cover;
+}
+.wea {
+  min-height: 80vh;
+}
+.find {
+  right: 0;
+  top: -4px;
+  color: white;
+}
+div .tomorrow-forecast {
+  background-color: #222530;
+}
+.degree sup {
+  font-size: 75%;
+  font-weight: 700;
+}
+.status-img {
+  width: 90px;
+  height: 90px;
+}
+footer {
+  background-color: #262936;
+  min-height: 109px;
+}
+.subscribe {
+  top: 30px;
+}
+
+.bg-m {
+  background: #323544;
+  border-radius: 10px;
+  height: 386px;
+}

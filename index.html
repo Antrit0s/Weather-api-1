@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Api Proj</title>
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaduFWB-zgW7wtzx9wI3cIH2tYEOJw5vR6Fg&s">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+
+<body class="text-white">
+    <nav class="navbar  d-flex flex-row justify-content-between">
+        <div class="container">
+            <div class="navIcon">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://routeweather.netlify.app/images/logo.png" alt="Logo"
+                        class="d-inline-block align-text-top">
+                </a>
+            </div>
+            <div class="navLinks ">
+                <ul class="d-flex flex-row text-capitalize py-2">
+                    <li><a class="active" href="index.html">home</a></li>
+                    <li><a href="#">news</a></li>
+                    <li><a href="#">live cameras</a></li>
+                    <li><a href="#">photos</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container py-4 wea">
+            <div class="find-loc position-relative">
+                <input class="form-control p-2" type="text" placeholder="Search by country" id="searchInput">
+                <button class=" btn btn-lg btn-secondary btn-outline-info position-absolute find">find</button>
+                <div class="alert alert-danger d-none" id="error"></div>
+            </div>
+            <div class="forecast-container py-5" id="forecast">
+                <div class="row g-4">
+                    <div class="today-forecast bg-m col-md-4">
+                        <div class="inner p-3">
+                            <div class="header d-flex justify-content-between" id="today">
+                                <span class="day">Day</span>
+                                <span class="date">Date</span>
+                            </div>
+                            <div class="content text-center">
+                                <div id="city"></div>
+                                <div class="degree"></div>
+                                <div class="status">
+                                </div>
+                                <div class="footer d-flex justify-content-between">
+                                    <span><img src="images/icon-umberella.png" alt="umbrella"> 20% </span>
+                                    <span class="windSpeed"><img src="images/icon-wind.png" alt="wind"> 45345</span>
+                                    <span class="windDir"><img src="images/icon-compass.png" alt="compass"> East </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tomorrow-forecast col-md-4 rounded">
+                        <div class="inner p-3 text-center ">
+                            <div class="header" id="today">
+                                <span class="day">Day</span>
+                            </div>
+                            <div class="content text-center">
+                                <div class="degree">28.2<sup>o</sup>C</div>
+                                <div class="status">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aftertomorrow-forecast bg-m col-md-4">
+                        <div class="inner p-3 text-center">
+                            <div class="header" id="today">
+                                <span class="day">Day</span>
+                            </div>
+                            <div class="content text-center">
+                                <div class="degree">28.2<sup>o</sup>C</div>
+                                <div class="status">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="subscribe position-relative">
+                <input class="form-control p-2" type="text" placeholder="Enter your email">
+                <button class=" btn btn-lg btn-secondary btn-outline-info position-absolute find">subscribe</button>
+            </div>
+        </div>
+    </footer>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
