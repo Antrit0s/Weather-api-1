@@ -14,27 +14,37 @@
 </head>
 
 
-<body class="text-white">
-    <nav class="navbar  d-flex flex-row justify-content-between">
-        <div class="container">
-            <div class="navIcon">
-                <a class="navbar-brand" href="index.html">
-                    <img src="https://routeweather.netlify.app/images/logo.png" alt="Logo"
-                        class="d-inline-block align-text-top">
-                </a>
-            </div>
-            <div class="navLinks ">
-                <ul class="d-flex flex-row text-capitalize py-2">
-                    <li><a class="active" href="index.html">home</a></li>
-                    <li><a href="#">news</a></li>
-                    <li><a href="#">live cameras</a></li>
-                    <li><a href="#">photos</a></li>
-                    <li><a href="#">contact</a></li>
+<body>
+    <nav class="navbar navbar-expand-lg justify-content-between">
+        <div class="container-md">
+            <a class="navbar-brand" href="index.html"> <img src="https://routeweather.netlify.app/images/logo.png"
+                    alt="Logo" class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active navLinks" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <main>
+    <main class="text-white">
         <div class="container py-4 wea">
             <div class="find-loc position-relative">
                 <input class="form-control p-2" type="text" placeholder="Search by country" id="searchInput">
@@ -64,9 +74,6 @@
                     </div>
                     <div class="tomorrow-forecast col-md-4 rounded">
                         <div class="inner p-3 text-center ">
-                            <div class="header" id="today">
-                                <span class="day">Day</span>
-                            </div>
                             <div class="content text-center">
                                 <div class="degree">28.2<sup>o</sup>C</div>
                                 <div class="status">
@@ -76,9 +83,6 @@
                     </div>
                     <div class="aftertomorrow-forecast bg-m col-md-4">
                         <div class="inner p-3 text-center">
-                            <div class="header" id="today">
-                                <span class="day">Day</span>
-                            </div>
                             <div class="content text-center">
                                 <div class="degree">28.2<sup>o</sup>C</div>
                                 <div class="status">

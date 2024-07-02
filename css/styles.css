@@ -3,7 +3,7 @@
   font-size: 20px;
 }
 .navbar {
-  background-color: #1e202b;
+  background-color: #323544;
 }
 .navbar .navIcon img {
   width: 64px;
@@ -15,20 +15,23 @@
 .navLinks ul li {
   padding: 10px;
 }
-.navLinks ul li a {
+.nav-Link ul li a {
   text-decoration: none;
   color: white;
-  padding: 10px;
+  padding: 8px;
   transition: 0.3s ease;
   font-weight: 400;
 }
+.navbar-collapse {
+  flex-grow: 0;
+}
 
-.navLinks ul li a:hover {
+.nav-link:hover {
   color: #1779d8;
   border: 2px solid #1779d8;
   border-radius: 30%;
 }
-.navLinks ul li a:active {
+.navbar-nav .nav-link.active {
   color: #1779d8;
   border: 2px solid #1779d8;
   border-radius: 30%;

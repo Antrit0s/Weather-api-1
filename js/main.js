@@ -80,14 +80,22 @@ function displayWeatherData(data) {
 }
 function displayForecast(selector, forecastData) {
     let forecastElement = document.querySelector(`${selector} .degree`);
+    const forecastDate = new Date(forecastData.date); // Parse the date string into a Date object
+    const day = forecastDate.getDay(); // Get the day of the week
+    const date = forecastDate.getDate(); // Get the day of the month
+    const month = forecastDate.getMonth(); // Get the month
+    const year = forecastDate.getFullYear(); // Get the year
+
     forecastElement.innerHTML = `
         <div class="forecast-icon">
+            <p>${daysOfWeek[day]}, ${date} ${monthsOfYear[month]} ${year}</p>
             <img class="status-img" src="${forecastData.day.condition.icon}" alt="">
             <p>${forecastData.day.maxtemp_c}<sup>o</sup>C</p>
             <p>${forecastData.day.mintemp_c}<sup>o</sup>C</p>
             <p>${forecastData.day.condition.text}</p>
         </div>`;
 }
+
 
 function getWindDirection(windDirection) {
     let dir;
